@@ -1,0 +1,84 @@
+/* Texts */
+	html {
+		
+	}
+	
+	body {
+		font-family: 'Roboto', sans-serif;
+	}
+
+/* Color Text */
+
+	header h1,
+	.main-bg h1 {
+		color: var(--white-color);
+	}
+
+	.main-bg p,
+	a {
+		color: var(--black-color);
+	}
+	
+	.light-bg label {
+		color: var(--black-color)
+	}
+
+	.light-bg h1 {
+		color: var(--main-color);
+	}
+
+/* Size Text */
+
+	h1 {
+		font-size: 3rem ;
+		font-weight: 900;
+		margin: 2rem 0;
+	}
+
+	p,
+	a:not(.btn), 
+	form button {
+		font-size: 1rem;
+	}
+
+	p, 
+	a:not(.btn) {
+		font-weight: 500;
+	}
+
+
+
+/* Buttons */
+
+	a.btn, 
+	form button {
+		color: var(--white-color);
+		background-color: var(--black-color);
+		display: inline-block;
+		padding: .5rem 2rem;
+		border: 0;
+		font-weight: 700;
+	}
+
+/* Form */
+
+	fieldset {
+		margin: 1rem 0;
+	}
+
+	fieldset input,
+	fieldset select,
+	fieldset textarea {
+		padding: .5rem .5rem;
+	}
+
+	form 
+
+
+/* Responsive */
+
+	@media(min-width: 992px){
+		html {
+			font-size: 24px;
+		}
+	}

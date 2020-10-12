@@ -1,0 +1,147 @@
+/* Imports */
+	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
+	@import "text.css";
+
+/* Clear HTML */
+	
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		text-decoration: none;
+	}
+
+/* Colors */
+
+	html {
+		--main-color: 	#ff652f;
+		--black-color: 	#272727;
+		--light-color: 	#747474;
+		--white-color: 	#ffffff;
+
+	}
+
+/* Header */
+
+	body > header {
+		background-image: url(https://images.unsplash.com/photo-1452674238634-6bbe7143cb3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+		min-height: 50vh;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		position: relative;
+		padding: .5rem 1rem;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+	}
+
+	body > header h1 {
+		text-align: center;
+	}
+
+	header nav {
+		order: -1;
+	}
+
+	header nav ul {
+		display: flex;
+	}
+
+	header nav ul > li {
+		display: inline-block;
+		padding: .5rem 1rem;
+
+
+	}
+
+	header a.btn {
+		text-align: center;
+		width: auto;
+		align-self: center;
+	}
+
+/* Main */
+
+	main > section,
+	main > article {
+		padding: 2rem 1rem;
+	}
+
+	.main-bg {
+		background-color: var(--main-color);
+	}
+
+
+/* Cows */
+
+	.columns {
+		margin: 1rem 0;
+		background-color: var(--black-color);
+		display: flex;
+		flex-flow: column nowrap;
+	}
+
+	.columns header {
+		display: flex;
+		flex-flow: column nowrap;
+	}
+
+	.columns header h1 {
+		order: 1;
+		text-align: center;
+		margin: 2rem 0;
+	}
+
+
+	.columns p {
+		color: var(--white-color);
+		margin: 0 1rem 2rem;
+		text-align: center;
+	}
+
+	.columns img {
+		object-position: center;
+		height: 250px;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	.columns a {
+		color: var(--white-color);
+		background-color: var(--light-color);
+		text-align: center;
+		padding: 1rem 0;
+	}
+
+/* Forms */
+	form fieldset {
+		border: 0;
+	}
+
+	form fieldset input:not([type="checkbox"]),
+	form fieldset select, 
+	form fieldset textarea {
+		width: 100%;
+		border: 1px solid var(--main-color);
+		background-color: var(--white-color);
+	}
+
+	form fieldset textarea {
+		height: 5rem;
+		resize: vertical;
+	}
+
+	form button {
+
+	}
+
+
+
+	@media(min-width: 992px) {
+		main {
+			max-width: 1400px;
+			margin: 0 auto;
+		}
+	}
+
