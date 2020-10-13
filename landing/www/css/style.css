@@ -1,5 +1,7 @@
 /* Imports */
+	
 	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
+	
 	@import "text.css";
 
 /* Clear HTML */
@@ -14,11 +16,10 @@
 /* Colors */
 
 	html {
-		--main-color: 	#ff652f;
+		--main-color: 	#f2994a;
 		--black-color: 	#272727;
 		--light-color: 	#747474;
 		--white-color: 	#ffffff;
-
 	}
 
 /* Header */
@@ -51,8 +52,6 @@
 	header nav ul > li {
 		display: inline-block;
 		padding: .5rem 1rem;
-
-
 	}
 
 	header a.btn {
@@ -71,7 +70,6 @@
 	.main-bg {
 		background-color: var(--main-color);
 	}
-
 
 /* Cows */
 
@@ -93,7 +91,6 @@
 		margin: 2rem 0;
 	}
 
-
 	.columns p {
 		color: var(--white-color);
 		margin: 0 1rem 2rem;
@@ -114,7 +111,12 @@
 		padding: 1rem 0;
 	}
 
+	ul.cows{
+		list-style: none;
+	}
+
 /* Forms */
+
 	form fieldset {
 		border: 0;
 	}
@@ -132,16 +134,87 @@
 		resize: vertical;
 	}
 
-	form button {
+/* Responsive */
 
-	}
+	/* Background */
 
+		@media(min-width:992px) {
 
+			/* Header */
 
-	@media(min-width: 992px) {
-		main {
-			max-width: 1400px;
-			margin: 0 auto;
+			body > header {
+				flex-flow: row nowrap;
+				height: 70vh;
+			}
+
+			body > header a.btn {
+				align-self: flex-start;
+			}
+
+			body > header nav, 
+			body > header a.btn,
+			body > header h1 {
+				margin-top: 1rem;
+			}
+			
+			/* Main */
+
+			main > .main-bg .width,
+			main .light-bg{
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+
+			p.p-columns {
+				columns: 2 auto;
+			}
+
+			.main-bg .width {
+				padding-bottom: 2rem;
+			}
+			
+			/* Form */
+
+			form {
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			form fieldset {
+				padding: 0 1rem;
+			}
+
+			form fieldset.half {
+				flex-basis: 50%;
+			}
+			
+			form fieldset.full{
+				flex-basis: 100%;
+			}
+
+			form button {
+				margin-left: 1rem;
+			}
+
+			input,
+			textarea,
+			select {
+				color: var(--black-color);
+				font-size: 1rem;
+			}
+
 		}
-	}
 
+		@media(min-width:768px) {
+
+			/* Cows */
+			.cows {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+			}
+
+			.cows > li {
+				flex-basis: 30%;
+			}
+		}

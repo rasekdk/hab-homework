@@ -1,8 +1,4 @@
 /* Texts */
-	html {
-		
-	}
-	
 	body {
 		font-family: 'Roboto', sans-serif;
 	}
@@ -15,12 +11,16 @@
 	}
 
 	.main-bg p,
-	a {
+	a:not(.btn),
+	.light-bg label {
 		color: var(--black-color);
 	}
-	
-	.light-bg label {
-		color: var(--black-color)
+
+	a:not(.btn):focus,
+	a:not(.btn):hover,
+	a:not(.btn):active,
+	a:not(.btn):visited {
+		color: var(--main-color);
 	}
 
 	.light-bg h1 {
@@ -46,8 +46,6 @@
 		font-weight: 500;
 	}
 
-
-
 /* Buttons */
 
 	a.btn, 
@@ -58,6 +56,13 @@
 		padding: .5rem 2rem;
 		border: 0;
 		font-weight: 700;
+	}
+
+	a.btn:hover,
+	form button:hover {
+		background-color: var(--light-color);
+		color: var(--black-color);
+		transition: .1s;
 	}
 
 /* Form */
@@ -71,9 +76,6 @@
 	fieldset textarea {
 		padding: .5rem .5rem;
 	}
-
-	form 
-
 
 /* Responsive */
 
