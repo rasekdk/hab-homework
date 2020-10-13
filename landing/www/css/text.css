@@ -6,10 +6,15 @@
 /* Color Text */
 
 	header h1,
-	.main-bg h1 {
+	.main-bg h2,
+	.columns h3 {
 		color: var(--white-color);
 	}
-
+	
+	.light-bg h2 {
+		color: var(--main-color);
+	}
+	
 	.main-bg p,
 	a:not(.btn),
 	.light-bg label {
@@ -17,20 +22,14 @@
 	}
 
 	a:not(.btn):focus,
-	a:not(.btn):hover,
-	a:not(.btn):active,
-	a:not(.btn):visited {
-		color: var(--main-color);
-	}
-
-	.light-bg h1 {
+	a:not(.btn):hover, {
 		color: var(--main-color);
 	}
 
 /* Size Text */
 
-	h1 {
-		font-size: 3rem ;
+	h1, h2, h3 {
+		font-size: var(--font-xl) ;
 		font-weight: 900;
 		margin: 2rem 0;
 	}
@@ -38,7 +37,7 @@
 	p,
 	a:not(.btn), 
 	form button {
-		font-size: 1rem;
+		font-size: var(--font-normal);
 	}
 
 	p, 
@@ -56,6 +55,7 @@
 		padding: .5rem 2rem;
 		border: 0;
 		font-weight: 700;
+		text-align: center;
 	}
 
 	a.btn:hover,
@@ -67,15 +67,7 @@
 
 /* Form */
 
-	fieldset {
-		margin: 1rem 0;
-	}
-
-	fieldset input,
-	fieldset select,
-	fieldset textarea {
-		padding: .5rem .5rem;
-	}
+	
 
 /* Responsive */
 
